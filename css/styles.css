@@ -259,4 +259,14 @@ body {
 				left: 0;
 			}
 
+.expand {
+	height: 5em;
+}
 
+#tweet-submit {
+	visibility: hidden;
+}
+
+#char-count {
+	visibility: hidden;
+}

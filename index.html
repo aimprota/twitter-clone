@@ -3,34 +3,23 @@
 	<head>
 		<meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-
 		<link rel="stylesheet" href="css/styles.css" type="text/css" />
+		<script src="js/jquery-2.0.3.min.js"></script>
+		<script src="js/main.js"></script>
 	</head>
 	<body>
 		<div id="page-container">
 			<div id="dashboard">
 				<div id="profile-summary">
 					<div class="content">
-						<img class='avatar' src='img/alagoon.jpg' />
-						<p>Your Name Here</p>
+						<img id='profilePic' class='avatar' src='img/alagoon.jpg' />
+						<p id= "name">Your Name Here</p>
 					</div>
 				</div>
 				<div id="tweet-content">
-
-					<!-- STEP 2: When the user clicks on the textarea, the textarea should double in size and the character count and Tweet buttons should be revealed. -->
-					<!-- HINT: jQuery ".on" eventHandler -->
 					<textarea class="tweet-compose" placeholder="Compose new Tweet..."/></textarea>
-
-					<!-- STEP 1: Initially, the Tweet button and the character count button below should be hidden. -->
-					<!-- HINT: Use CSS -->
 					<div id="tweet-controls">
-
-						<!-- STEP 3: As the user types the character count should decrease. Once it hits 10 character or less the count should turn red -->
-						<!-- HINT: jQuery keypress events (keypress, keydown, keyup, etc) -->
 						<div id="char-count">140</div>
-
-						<!-- STEP 4: If the user puts in more than 140 characters, the tweet button should be disabled (and re-enabled when there are <= 140 chars) -->
-						<!-- HINT: javascript length method -->
 						<button class="button" id="tweet-submit">Tweet</button>
 					</div>
 				</div>
